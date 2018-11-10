@@ -1,0 +1,198 @@
+* {padding: 0px; margin: 0px}
+body {font-family: 'Changa', sans-serif; background: lightblue url('../img/starrySky.jpg'); background-size: cover}
+main, nav {display: block}
+
+.navBar {background: indigo; float: left; border-right: 1px solid black; margin-right: 5px; width: 19%; height: 350px}
+.navTitle{color: yellow; font-size: 32px}
+
+.navBar li {margin: 20px 10px; list-style-type: none}
+
+a {font-size: 1.1rem; color: black; background: yellow; display: block; padding: 5px; border-radius: 5px; text-decoration: none}
+
+a:hover {background: gold; color: purple; margin-bottom: 25px}
+
+main {color: indigo; width: 60%; margin: 0px auto}
+.intro {padding: 20px; background: yellow; margin-bottom: 10px; margin-left: 20px; border-right: 1px solid indigo; border-left: 1px solid indigo; border-bottom: 1px solid indigo}
+a#aboutLink{margin: 0px; padding: 0px; border-radius: 0px}
+a#aboutLink:hover {margin: 0px; background: transparent}
+.agenda {background: white; border: 3px solid indigo; overflow: hidden; margin-left: 20px}
+
+.agenda h2 {display: block; background: indigo; color: yellow; padding-left: 20px; padding-top: 10px; padding-bottom: 10px}
+#agendaList{width: 45%; float: left; padding: 20px}
+#agendaList li {font-size: 20px; list-style-type: none; color: black; font-weight: bold; background: #8FBC8F; border-radius: 5px; margin: 0px; margin-bottom: 20px; padding: 10px; font-family: 'Handlee', cursive}
+#agendaList li a {font-family: 'Chakra Petch', sans-serif; font-size: 14px; color: #800000; background: #FF6347; border-radius: 3px; font-weight: bold; width: 35px; padding: 4px 7px 4px 4px; margin: 0px auto; margin-top: 10px}
+
+#agendaList li a:hover {background: #FFA07A}
+
+
+#addButt {font-weight: bold; background: lightBlue; color: indigo; border-radius: 5px; padding: 10px;
+     margin: 10px 0px; margin-left: 20px; border: 1px solid indigo; width: 20%}
+#submitButt {background: indigo; color: yellow; border: 1px solid indigo; padding: 5px;
+     margin-top: 10px; border-radius: 3px}
+
+#addWindow {font-size: 1.2rem; background: lightBlue; width: 30%; padding: 30px;
+    margin: 20px 20px 20px 0px; float: right; visibility: hidden; border: 1px solid indigo}
+#counter {display: inline; float: right; font-family: monospace; margin-right: 20px}
+#countNum {display: inline}
+
+#helpBox { float: right;
+    width: 95%;
+    background: gray;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/********************** CONVERTER*************/
+#converter {font-size: 1.8rem; font-weight: bold; color: white; background: gray; width: 360px; height: 125px; padding: 30px 30px 5px 30px;
+margin: 20px 20px 0px 20px; border-top: 0px solid black; border-right: 0px solid black; border-left: 0px solid black; border-bottom: 0px solid black}
+#conDiv {float: left}
+#daysDisplay {font-size: 1.5rem; color: white; background: red; width: 360px; height: 40px; padding: 10px 30px 10px 30px; margin: 0px 0px 0px 20px; border-bottom: 0px solid black; border-right: 0px solid black; border-left: 0px solid black; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px}
+#minsDisplay {font-size: 1.5rem; color: white; background: green; width: 360px; height: 40px; padding: 10px 30px 10px 30px; margin: 0px 0px 0px 20px; border-right: 0px solid black; border-left: 0px solid black}
+#secsDisplay {font-size: 1.5rem; color: white; background: blue; width: 360px; height: 40px; padding: 10px 30px 10px 30px; margin: 0px 0px 20px 20px; border-top: 0px solid black; border-bottom: 0px solid black; border-right: 0px solid black; border-left: 0px solid black}
+
+#daysOutput {float: right}
+#daysLabel {float: left; width: 25%}
+
+#minsOutput {float: right}
+#minsLabel {float: left; width: 25%}
+
+#secsOutput {float: right}
+#secsLabel {float: left; width: 25%}
+
+#timeInput {font-size: 1.8rem; margin-top: 20px}
+/********************* CHANGE CONVERSIONs******************************************/
+#convWindow {color: white; font-size: 1.3rem; margin: 20px; padding: 20px; background: gray; width: 320px; float: right}
+
+select, option {font-weight: bold}
+#convSelect {margin-left: 10px}
+/********************** SEARCH *******************************************/
+#searchWindow {background: lightblue; width: 80%; margin: 20px auto; border-bottom: 1px solid lightBlue}
+#searchInput {color: purple; font-size: 1.2rem; margin: 20px}
+li.taskItem {list-style-type: none; border-left: 1px solid lightBlue; border-right: 1px solid lightBlue}
+.taskItem a {color: indigo; background: white; border-radius: 0px; margin-bottom: 2px; padding-left: 10px; font-size: 1rem}
+.taskItem a:hover {color: white; background: #8FBC8F}
+/************ AUTH *************/
+.authDiv {margin: 10px 0px 10px 30px}
+
+/************************************ MEDIA QUERIES *******************************/
+@media screen and (min-width: 830px) {
+    .authA {background: #00BFFF}
+    .authA:hover {background: #00FFFF; color: purple}
+}
+
+@media screen and (max-width: 1495px) {
+    #converter{width: 320px; font-size: 1.2rem}
+    #daysDisplay{width: 320px; font-size: 1.2rem}
+    #minsDisplay{width: 320px; font-size: 1.2rem}
+    #secsDisplay{width: 320px; font-size: 1.2rem}
+    #timeInput {font-size: 1.2rem; margin-top: 20px}
+    #convWindow {font-size: 1.2rem; width: 300px}
+
+}
+
+@media screen and (max-width: 1408px) {
+    nav {width: 16%}
+    main {width: 80%}
+    .navTitle {font-size: 22px}
+    .agenda h2 {font-size: 18px}
+    .navBar a {font-size: 15px}
+    .intro h3 {font-size: 15px}
+    #addButt {margin-left: 130px}
+}
+
+@media screen and (max-width: 1090px) {
+    #converter{width: 260px; font-size: 1.1rem; margin-right: 0px}
+    #daysDisplay{width: 260px; font-size: 1.1rem}
+    #minsDisplay{width: 260px; font-size: 1.1rem}
+    #secsDisplay{width: 260px; font-size: 1.1rem}
+    #timeInput {font-size: 1.1rem; margin-top: 20px}
+    #convWindow {font-size: 1.1rem; width: 175px; margin-left: 0px}
+}
+
+@media screen and (max-width: 1064px) {
+    .navTitle {font-size: 20px}
+    .navBar li {font-weight: bold}
+    .navBar a {font-size: 13px}
+    #agendaList li {font-size: 15px; padding: 5px}
+    #agendaList li a {font-size: 12px; padding-right: 4px}
+    #addButt {margin-left: 100px}
+}
+
+@media screen and (max-width: 892px) {
+     main {margin: 0px 100px; width: 80%}
+    .navTitle {font-size: 18px}
+
+    .navBar a {font-size: 15px; font-weight: bold}
+
+    #agendaList li {padding: 5px}
+    #agendaList li a {font-size: 12px; padding-right: 4px}
+    .intro {margin-left: 0px}
+    #addButt {margin-left: 68px}
+}
+
+@media (max-width: 830px) {
+    .navBar {float: none; padding: 0px 0px 8px 0px; margin: 0px; width: 100%; border-right: 0px; background: indigo; height: 40px}
+    .navBar li {float: left; margin: 10px 2px; margin-right: 20px}
+    .navBar li a, .authA {border-radius: 0px; color: yellow; background: indigo; font-weight: normal; font-size: 15px}
+    .navBar li a:hover{font-weight: bold}
+    .navTitle {margin-right: 10px}
+    a:hover {margin-bottom: 0px}
+    .intro {padding: 5px 5px; margin: 0px; width: 100%; border: 0px; float: none; overflow: hidden; background: white}
+    .intro h3 {float: left; margin-left: 10px}
+    .intro p {float: right; margin-right: 20px}
+    #introText {font-size: 0.9rem;}
+     main {float: none; padding: 0px; margin: 0px; width: 100%}
+     .agenda {background: yellow; border: 0px; border-top: 1px solid indigo; border-bottom: 1px solid indigo; margin: 0px; padding-bottom: 0px}
+     .agenda h2 {background: yellow; color: indigo; padding: 10px; margin: 0px}
+     #agendaList {width: 100%; float: none; padding: 10px}
+     #agendaList li {width: 94%; border: 1px solid #006400; list-style-type: none}
+     #agendaList li a {width: 100px; border: 1px solid #800000; font-size: 13px; padding: 5px 0px 5px 65px}
+     #addWindow {color: #006400; font-weight: bold; font-size: 14px; float: none; border: 0px; padding: 5px 240px; width: 100%}
+     #submitButt {color: #006400; margin: 0px; background: lightblue; border: 1px solid #006400; font-weight: bold}
+     #addButt {margin: 10px auto}
+
+     #convWindow {margin: 0px auto; padding: 10px 30px 10px 30px; width: 350px; float: none; margin: 0px auto; border: 2px solid black; border-radius: 10px; margin-bottom: 10px}
+     #timeInput {font-size: 1rem; margin-left: 10px}
+
+     #conDiv {float: none; margin: 0px auto}
+     #converter{margin: 0px auto; width: 350px; padding: 5px 30px 15px 30px; height: 50px; border-top: 2px solid black; border-bottom: 2px solid black; border-right: 2px solid black; border-left: 2px solid black; border-top-left-radius: 20px; border-top-right-radius: 20px}
+     #daysDisplay{margin: 0px auto; width: 350px; padding: 5px 30px 0px 30px; border-top: 0px solid black; border-bottom: 2px solid black; border-right: 2px solid black; border-left: 2px solid black}
+     #minsDisplay{margin: 0px auto; width: 350px; padding: 5px 30px 0px 30px; border-top: 0px solid black; border-bottom: 2px solid black; border-right: 2px solid black; border-left: 2px solid black}
+     #secsDisplay{margin: 0px auto; margin-bottom: 20px; padding: 5px 30px 0px 30px; width: 350px; border-top: 0px solid black; border-bottom: 2px solid black; border-right: 2px solid black; border-left: 2px solid black; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px}
+
+     #searchWindow {background: lightblue; width: 60%; margin: 20px auto; border: 1px solid black}
+     #searchInput {font-size: 1rem; margin: 20px; border: 1px solid black}
+     li.taskItem {list-style-type: none; margin: 0px; border: 1px solid black}
+     .taskItem a {color: indigo; background: white; padding: 0px; padding-left: 10px; font-weight: normal; margin: 0px}
+
+     #helpBox {
+         width: 95%;
+         background: gray;
+         padding: 5px;
+         border: 2px solid black;
+         border-radius: 0px;
+         margin: 0px auto; margin-left: 5px;
+         font-size: 13px
+     }
+}
+
+@media screen and (max-width: 576px) {
+
+    .navTitle {font-size: 30px; color: indigo; padding: 0px; padding-left: 140px}
+    .navBar {height: 150px; margin-top: -10px; padding-top: 10px; background: yellow; margin-left: 0px}
+    .navBar li {float: none; border-bottom: 1px solid yellow; margin: 0px; padding: 3px 0px 3px 220px; background: indigo}
+    li.navTitleLi {background: yellow; padding: 0px}
+    .navBar li a {width: 100%; padding: 0px; margin: 0px; font-size: 13px}
+    .intro {border-top: 1px solid indigo; width: 99%}
+    #introText {font-size: 0.8rem}
+    .agenda {border: 0px; border-top: 1px solid indigo; border-bottom: 1px solid indigo}
+    #agendaList li {border-radius: 10px; padding-right: 0px}
+    #agendaList li a {float: right; margin: 0px; padding: 8px 5px 7px 5px; margin-top: -6px; margin-right: -2px;
+        border-top-right-radius: 10px; border-bottom-right-radius: 10px}
+
+    .navBar li:hover {border-bottom: 5px solid yellow}
+    #addWindow {padding: 0px 160px}
+    #addButt {display: block; padding: 8px 0px; width: 500px}
+}
